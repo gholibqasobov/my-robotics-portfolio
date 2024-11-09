@@ -17,7 +17,7 @@ body {
 
 .header {
     background-color: #98c0e6;
-    padding: 3rem 0;
+    padding: 4em 0;
 }
 
 .container {
@@ -54,6 +54,10 @@ a {
     float: right;
 }
 
+.nav a{
+    font-size: 2rem;
+}
+
 
 /* Main */
 
@@ -77,13 +81,13 @@ a {
 .projects-list {
     list-style-type: none;
     display:flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     padding: 0;
 }
 
 
 .projects-list li {
-    margin-bottom: 3rem;
+    margin-bottom: 3em;
     margin-left: 2.5em;
 }
 
@@ -93,9 +97,8 @@ a {
 
 .projects-list .img-wrapper {
     position: relative;
-    width: 35rem;
-    height: 35rem;
-    background-color: red;
+    width: 35em;
+    height: 35em;
 }
 
 .projects-list img {
@@ -160,6 +163,40 @@ h5 {
 }
 
 
+/* Img hover effect */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #000;
+}
+
+.view-project {
+    color: #fff;
+    font-size: 2.4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.projects-list li:hover .overlay {
+    opacity: 0.5;
+}
+
 
 /* footer */
 
@@ -203,3 +240,227 @@ h2 {
     list-style-type: none;
     font-weight: 600;
 }
+
+
+
+
+/* Responsive Web */
+
+@media screen and (max-width:1200px) {
+    .projects-list li {
+        margin-bottom: 3em;
+        margin-left: 2em;
+    }
+
+    .projects-list li a {
+        width: 30em;
+    }
+    .projects-list .img-wrapper {
+        position: relative;
+        width: 30em;
+        height: 30em;
+    }
+
+    .h5 {
+        font-size: 1.7rem;
+        line-height: 1.2;
+    }
+
+    .projects-list h3 {
+        font-size: 2rem;
+    }
+
+    .projects-list{
+        padding-left: 3%;
+        
+    }
+
+}
+
+@media screen and (max-width: 1064px){
+    .projects-list li {
+        margin-left: 1%;
+    }
+
+    .projects-list li a {
+        width: 35em;
+        margin-left: 4em;
+    }
+
+    .projects-list .img-wrapper {
+        position: relative;
+        width: 35em;
+        height: 35em;
+    }
+
+    .projects-list{
+        padding-left: 7em;
+    }
+
+
+}
+
+@media screen and (max-width: 950px) {
+
+    .projects-list li {
+        margin-bottom: 3em;
+        margin-left: 2em;
+    }
+
+    .projects-list li a {
+        width: 30em;
+    }
+    .projects-list .img-wrapper {
+        position: relative;
+        width: 30em;
+        height: 30em;
+    }
+
+    .h5 {
+        font-size: 1.7rem;
+        line-height: 1.2;
+    }
+
+    .projects-list h3 {
+        font-size: 2rem;
+    }
+
+    .projects-list{
+        padding-left: 2%;
+        
+    }
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+    .projects-list li {
+        margin-left: 1.5em;
+    }
+
+    .projects-list li a {
+        width: 28em;
+    }
+    .projects-list .img-wrapper {
+        position: relative;
+        width: 28em;
+        height: 28em;
+    }
+
+    .h5 {
+        font-size: 1.7rem;
+        line-height: 1.2;
+    }
+
+    .projects-list h3 {
+        font-size: 2rem;
+    }
+
+    .projects-list{
+        padding-left: 1%;
+        
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .projects-list li {
+        margin-left: 1.5em;
+    }
+
+    .projects-list li a {
+        width: 28em;
+    }
+    .projects-list .img-wrapper {
+        position: relative;
+        width: 28em;
+        height: 28em;
+    }
+
+    .h5 {
+        font-size: 1.7rem;
+        line-height: 1.2;
+    }
+
+    .projects-list h3 {
+        font-size: 2rem;
+    }
+
+    .projects-list{
+        padding-left: 0%;
+        
+    }
+    
+}
+
+
+@media screen and (max-width: 740px) {
+    .projects-list li {
+        margin-left: 1.5em;
+    }
+
+    .projects-list li a {
+        width: 40em;
+    }
+    .projects-list .img-wrapper {
+        position: relative;
+        width: 40em;
+        height: 40em;
+    }
+
+    .h5 {
+        font-size: 1.7rem;
+        line-height: 1.2;
+    }
+
+    .projects-list h3 {
+        font-size: 2rem;
+    }
+
+    .projects-list{
+        padding-left: 0%;
+        
+    }
+
+    .h5 {
+        font-size: 1.7rem;
+        line-height: 1.2;
+    }
+
+    .projects-list h3 {
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+    .projects-list li a {
+        width: 35em;
+    }
+    .projects-list .img-wrapper {
+        position: relative;
+        width: 35em;
+        height: 35em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .projects-list {
+        padding: 0;
+    }
+    .projects-list li{
+        margin: 0;
+    }
+    .projects-list li a {
+        width: 30em;
+        margin-left: 1.5em;
+    }
+    .projects-list .img-wrapper {
+        position: relative;
+        width: 30em;
+        height: 30em;
+    }
+}
+
